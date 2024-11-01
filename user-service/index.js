@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.get('/user', async (req, res) => {
+app.get('/', async (req, res) => {
     return res.status(200).json({ 'msg': 'User service on' });
 });
 
